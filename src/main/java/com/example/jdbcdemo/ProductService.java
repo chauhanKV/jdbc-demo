@@ -53,6 +53,7 @@ public class ProductService {
     {
 //        product.setID(nextID.incrementAndGet());
 //        productList.add(product);
-        return productDAO.createProductWithPreparedStatement(product);
+        //return productDAO.createProductWithPreparedStatement(product);
+        return productDAO.createProductWithPSTransaction(product);
     }
 }
